@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import AboutMe from './AboutMe';
+import MyProjects from './MyProjects';
+import ContactMe from './ContactMe';
 
 class About extends Component {
     render() {
@@ -8,8 +10,8 @@ class About extends Component {
                 <a id="About">
                     <AboutMe />
                 </a>
-                <div>My Projects</div>
-                <div>Contact Me</div>
+                <MyProjects />
+                <ContactMe />
             </div>
         );
     }

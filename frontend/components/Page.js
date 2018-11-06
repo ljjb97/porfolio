@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import styled, { ThemeProvider, injectGlobal } from 'styled-components';
 import TitleCanvas from './TitleCanvas';
 import About from './About';
+import Meta from './Meta';
 //import WebCanvas from './WebCanvas'
 
 const theme = {
@@ -44,14 +45,17 @@ class Page extends Component {
     render() {
         return (
             <ThemeProvider theme={theme}>
-                <PageGrid>
-                    <TitleContainer>
-                        <TitleCanvas />
-                    </TitleContainer>
-                    <BodyContainer>
-                        <About />
-                    </BodyContainer>
-                </PageGrid>
+                <div>
+                    <Meta />
+                    <PageGrid>
+                        <TitleContainer>
+                            <TitleCanvas />
+                        </TitleContainer>
+                        <BodyContainer>
+                            <About />
+                        </BodyContainer>
+                    </PageGrid>
+                </div>
             </ThemeProvider>
         );
     }
