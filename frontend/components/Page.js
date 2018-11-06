@@ -11,9 +11,9 @@ const theme = {
 const PageGrid = styled.div`
     display:grid;
     grid-template-areas:
-    'title'
-    'Nav'
-    'body';
+    'title title title'
+    '. Nav .'
+    'body body body';
 `;
 
 const TitleContainer = styled.div`
