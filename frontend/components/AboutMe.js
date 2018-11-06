@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import TitleLine from './styles/TitleStyles';
 import styled from "styled-components"
+import TriangleBacking from "./TriangleBacking.js"
 
 const Description = styled.div`
     display: grid;
@@ -27,11 +27,20 @@ const MyPicture = styled.img`
     }
 `;
 
+const AbCanvas = styled.canvas`
+    z-index: -1;
+    position: absolute;
+`;
+
 class AboutMe extends Component {
+    componentDidMount() {
+        TriangleBacking(0, 0, 1, window.innerWidth, 600, 50, "#FFFFFF", "AboutBack");
+        document.getElementById("AboutBack").style.top = (window.innerHeight + 105).toString() + "px"
+    }
     render() {
         return (
             <div>
-                <TitleLine>About Me</TitleLine>
+                <AbCanvas id="AboutBack"/>
                 <Description>
                     <Words>
                         <p>0 - 18 Born and Raised in Waterloo</p>

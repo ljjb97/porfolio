@@ -16,6 +16,8 @@ const GridPlacer = styled.div`
 `;
 
 const TitleLine = styled.p`
+    text-shadow: 2px 2px 4px #000000;
+    color: #FFFFFF;
     font-size: 3rem;
     text-align: center;
     grid-area: line1;
@@ -25,15 +27,17 @@ const TitleLine = styled.p`
 `;
 
 const Button = styled.a`
+    box-shadow: 2px 2px 4px #000000;
+    text-shadow: 2px 2px 4px #000000;
     grid-area: button;
     text-align:center;
     width: 250px;
     cursor: pointer;
     font-size: 2rem;
     text-decoration: none;
-    border: 5px solid #000000;
-    background-color: #2dd9fc;
-    color: #000000;
+    border: 5px solid #FFFFFF;
+    background-color: transparent;
+    color: #FFFFFF;
 `;
 
 class TitleCanvas extends Component {

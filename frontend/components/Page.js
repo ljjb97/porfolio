@@ -3,7 +3,6 @@ import styled, { ThemeProvider, injectGlobal } from 'styled-components';
 import TitleCanvas from './TitleCanvas';
 import About from './About';
 import Meta from './Meta';
-import NavBar from './NavBar'
 
 const theme = {
 };
@@ -11,19 +10,13 @@ const theme = {
 const PageGrid = styled.div`
     display:grid;
     grid-template-areas:
-    'title title title'
-    '. Nav .'
-    'body body body';
+    'title'
+    'body';
 `;
 
 const TitleContainer = styled.div`
     grid-area: title;
     width:100%;
-`;
-
-const NavContainer = styled.div`
-    grid-area: Nav;
-    width: 100%;
 `;
 
 const BodyContainer = styled.div`
@@ -57,9 +50,6 @@ class Page extends Component {
                         <TitleContainer>
                             <TitleCanvas />
                         </TitleContainer>
-                        <NavContainer>
-                            <NavBar />
-                        </NavContainer>
                         <BodyContainer>
                             <About />
                         </BodyContainer>
