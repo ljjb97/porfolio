@@ -24,7 +24,7 @@ class MyProjects extends Component {
 
     render() {
         return (
-            <div>
+            <div id="MyProjects">
                 <TitleLine>My Projects</TitleLine>
                 <Projects>
                     <Project>Project 1</Project>

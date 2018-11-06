@@ -16,7 +16,7 @@ const LinkStyle = styled.a`
 class ContactMe extends Component {
     render() {
         return (
-            <div>
+            <div id="Contact">
                 <TitleLine>Contact</TitleLine>
                 <LinkStyle href="https://www.linkedin.com/in/liam-ballantyne/"><ImageSizer src="../static/LinkedIn.svg" />LinkedIn</LinkStyle>
                 <br/>
