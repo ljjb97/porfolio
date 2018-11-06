@@ -22,6 +22,9 @@ const Words = styled.div`
 const MyPicture = styled.img`
     grid-area: Picture;
     border-radius: 50%;
+    @media(max-width: 700px) {
+        padding-left: 20px;
+    }
 `;
 
 class AboutMe extends Component {
@@ -31,8 +34,8 @@ class AboutMe extends Component {
                 <TitleLine>About Me</TitleLine>
                 <Description>
                     <Words>
-                        <p>0 - 19 Born and Raised in Waterloo</p>
-                        <p>19 - Present Studying at Carleton University in Ottawa</p>
+                        <p>0 - 18 Born and Raised in Waterloo</p>
+                        <p>18 - Present Studying at Carleton University in Ottawa</p>
                         <p>I've always loved to build things! From playing with Lego and then Minecraft as a kid to building innovative and creative sites today!</p>
                     </Words>
                     <MyPicture src= "../static/LiamBallantyne.jpg" alt= "avatar"/>

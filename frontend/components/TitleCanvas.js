@@ -19,7 +19,7 @@ const TitleLine = styled.p`
     font-size: 3rem;
     text-align: center;
     grid-area: line1;
-    @media(max-width: 1300px) {
+    @media(max-width: 1000px) {
         font-size: 2rem;
     }
 `;

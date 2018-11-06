@@ -4,7 +4,9 @@ import TitleLine from './styles/TitleStyles';
 
 const Projects = styled.div`
     padding-left: 20px;
+    padding-right: 20px;
     display: grid;
+    grid-gap:5px;
     grid-template-columns: 1fr 1fr 1fr;
     @media(min-width: 700px) and (max-width: 1050px) {
         grid-template-columns: 1fr 1fr;
