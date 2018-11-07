@@ -2,12 +2,11 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 const Projects = styled.div`
-    margin: 50px;
+    margin: 10px;
+    padding: 20px;
     box-shadow: 2px 2px 4px #000000;
     border-radius: 50px;
     background-color: #f9f9f9;
-    padding-left: 20px;
-    padding-right: 20px;
     display: grid;
     grid-gap:5px;
     grid-template-columns: 1fr 1fr 1fr;
@@ -16,6 +15,7 @@ const Projects = styled.div`
     }
     @media(max-width: 700px) {
         grid-template-columns: 1fr;
+        margin: 10px;
     }
 `;
 
@@ -24,13 +24,29 @@ const Project = styled.div`
 `;
 
 class MyProjects extends Component {
+    componentDidMount() {
+        const canvas = document.getElementById('projImg1');
+        const  Proj1 = document.getElementById("proj1");
+        const ProjWidth = window.getComputedStyle(Proj1).getPropertyValue('width').split("");
+        ProjWidth.splice(ProjWidth.length - 2, 2);
+        const ProjWidthNum = parseInt(ProjWidth.join(""))
+        canvas.width = ProjWidthNum;
+        canvas.height = ProjWidthNum;
+        const ctx = canvas.getContext('2d');
+        const img = new Image();
+        img.addEventListener('load', function () {
+            ctx.drawImage(this, 0, 0, ProjWidthNum, ProjWidthNum);
+        });
+        img.src = '../static/RelaxProjPic.PNG';
+        Proj1.style.height = ProjWidthNum.toString() + "px"
+    };
     render() {
         return (
             <div id="MyProjects">
                 <Projects>
-                    <Project>Project 1</Project>
-                    <Project>Project 2</Project>
-                    <Project>Project 3</Project>
+                    <Project id="proj1"><canvas id="projImg1"/></Project>
+                    <Project>Project 2<br/> Coming Soon</Project>
+                    <Project>Project 3 <br/> Coming Soon</Project>
                 </Projects>
             </div>
         );

@@ -1,4 +1,4 @@
-const TriangleBacking = (color, sat, k, wid, hght, off, bgc, id ) => {
+const TriangleBacking = (color, sat, k, wid, hght, off, rng, bgc, id ) => {
     const canvas = document.getElementById(id);
     canvas.style.backgroundColor = bgc;
     canvas.width = wid;
@@ -48,8 +48,7 @@ const TriangleBacking = (color, sat, k, wid, hght, off, bgc, id ) => {
         for (var k = 0, h = 0; k < s.length; k++)
             h = Math.imul(31, h) + s.charCodeAt(k) | 0;
         const ArrStr = (("" + h).split(""));
-        const l = ArrStr.length;
-        return ((ArrStr[l - 2] + ArrStr[l - 1]) / 2 + off);
+        return ((ArrStr[ArrStr.length - 2] + ArrStr[ArrStr.length - 1]) / rng + off);
     }
 
     //Takes a k value which increases each frame and the i, j and x value to set the specific triangle

@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import styled from "styled-components"
-import TriangleBacking from "./TriangleBacking.js"
 
 const Description = styled.div`
-    margin: 50px;
+    margin: 10px;
     box-shadow: 2px 2px 4px #000000;
     border-radius: 50px;
     background-color: #f9f9f9;
@@ -12,6 +11,7 @@ const Description = styled.div`
     grid-template-areas: 
         'Words Picture';
     @media(max-width: 700px) {
+        margin: 10px;
         grid-template-areas:
             'Picture'
             'Words';
@@ -38,9 +38,12 @@ class AboutMe extends Component {
             <div>
                 <Description>
                     <Words>
-                        <p>0 - 18 Born and Raised in Waterloo</p>
-                        <p>18 - Present Studying at Carleton University in Ottawa</p>
-                        <p>I've always loved to build things! From playing with Lego and then Minecraft as a kid to building innovative and creative sites today!</p>
+                        <h2>Fullstack Devloper with a passion for learning and building</h2>
+                        <p>I love to build things, and when I say things I mean anything and everything! 
+                            Whether its been pouring countless hours into playing with Lego and Minecraft as a kid,
+                            or building my own circuit boards from scratch in highschool building has always been my passion.
+                            After highschool I began to play around with programming, and I soon learn't about Web Devlopment.
+                            Since then I begun I've honeing my skills and now I hope to build a career doing what I love!</p>
                     </Words>
                     <MyPicture src= "../static/LiamBallantyne.jpg" alt= "avatar"/>
                 </Description>

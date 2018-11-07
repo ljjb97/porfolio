@@ -18,19 +18,26 @@ class Background extends Component {
         var k = 0;
 
         const update = (time) => {
-            TriangleBacking(195, 100, k, window.innerWidth, window.innerHeight, 25, '#00a0fc', "titleBack");
+            TriangleBacking(195, 100, k, window.innerWidth, window.innerHeight, 25, 2, '#00a0fc', "titleBack");
             k += 1;
             if (k > 100) {
                 k = 0;
             }
             requestAnimationFrame(update)
         }
-
+        
         update(k);
         this.refs.background.style.height = window.innerHeight.toString() + 'px'
         //remove the backer that rendered on the server to display something while the actual background is loaded clientside
         background.removeChild(this.refs.background.childNodes[0]);
-    }
+        window.addEventListener("resize", () => {
+            update(k);
+            document.getElementById("background").style.height = window.innerHeight.toString() + 'px'
+        }
+        );
+    };
+
+    
 
 
     render() {

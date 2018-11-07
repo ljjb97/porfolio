@@ -17,8 +17,8 @@ class About extends Component {
         const test = window.getComputedStyle(ABdes).getPropertyValue('height').split("");
         test.splice(test.length - 2, 2);
         const IntMaker = parseInt(test.join(""));
-        TriangleBacking(0, 0, 1, window.innerWidth, IntMaker, 50, "#FFFFFF", "AboutBack");
-        document.getElementById("AboutBack").style.top = (window.innerHeight + 105).toString() + "px"
+        TriangleBacking(0, 0, 0, window.innerWidth, IntMaker, 50, 10, "#FFFFFF", "AboutBack");
+        document.getElementById("AboutBack").style.top = (window.innerHeight + 100).toString() + "px"
     }
     render() {
         return (

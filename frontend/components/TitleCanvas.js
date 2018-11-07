@@ -41,11 +41,19 @@ const Button = styled.a`
 `;
 
 class TitleCanvas extends Component {
+    componentDidMount() {
+        window.addEventListener("resize", () => {
+            const grid = document.getElementById("gridplacer");
+            grid.style.top = '50%';
+            grid.style.left = '50%';
+            grid.style.transform= 'translate(-50%, -50%)';
+        })
+    }
     render() {
         return (
             <div>
                 <Background/>
-                <GridPlacer>   
+                <GridPlacer id="gridplacer">   
                     <TitleLine>Hi, my name is Liam Ballantyne, <br /> and I'm a Web Developer.</TitleLine>
                     <Button ref="button" onClick={ () => {
                         document.getElementById('About').scrollIntoView({ behavior: 'smooth'});
