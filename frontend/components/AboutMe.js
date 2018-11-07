@@ -20,6 +20,7 @@ const Words = styled.div`
 `;
 
 const MyPicture = styled.img`
+    padding-top: 20px;
     grid-area: Picture;
     border-radius: 50%;
     @media(max-width: 700px) {
@@ -27,20 +28,10 @@ const MyPicture = styled.img`
     }
 `;
 
-const AbCanvas = styled.canvas`
-    z-index: -1;
-    position: absolute;
-`;
-
 class AboutMe extends Component {
-    componentDidMount() {
-        TriangleBacking(0, 0, 1, window.innerWidth, 600, 50, "#FFFFFF", "AboutBack");
-        document.getElementById("AboutBack").style.top = (window.innerHeight + 105).toString() + "px"
-    }
     render() {
         return (
             <div>
-                <AbCanvas id="AboutBack"/>
                 <Description>
                     <Words>
                         <p>0 - 18 Born and Raised in Waterloo</p>

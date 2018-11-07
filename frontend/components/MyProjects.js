@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import TitleLine from './styles/TitleStyles';
 
 const Projects = styled.div`
     padding-left: 20px;
@@ -21,11 +20,9 @@ const Project = styled.div`
 `;
 
 class MyProjects extends Component {
-
     render() {
         return (
             <div id="MyProjects">
-                <TitleLine>My Projects</TitleLine>
                 <Projects>
                     <Project>Project 1</Project>
                     <Project>Project 2</Project>

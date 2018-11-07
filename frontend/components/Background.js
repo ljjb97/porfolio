@@ -19,7 +19,7 @@ class Background extends Component {
 
         const update = (time) => {
             TriangleBacking(195, 100, k, window.innerWidth, window.innerHeight, 25, '#00a0fc', "titleBack");
-            k += 0.1;
+            k += 1;
             if (k > 100) {
                 k = 0;
             }

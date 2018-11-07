@@ -72,8 +72,8 @@ const TriangleBacking = (color, sat, k, wid, hght, off, bgc, id ) => {
     //Takes a k value to pass to hex gen
     //Uses a for loop to generate each frame of the background
     const init = (k) => {
-        for (let i = 0; i < window.innerWidth; i += 60) {
-            for (let j = 25; j < window.innerHeight + 50; j += 60) {
+        for (let i = 0; i < wid; i += 60) {
+            for (let j = 25; j < hght + 50; j += 60) {
                 Triangle(i, j - 50, i + 25, j - 75, i + 25, j - 25, HexGen(i, j, 1, k));
                 Triangle(i + 55, j - 50, i + 30, j - 25, i + 30, j - 75, HexGen(i, j, 2, k));
                 Triangle(i, j + 5, i + 25, j - 20, i, j - 45, HexGen(i, j, 3, k));
