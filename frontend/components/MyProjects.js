@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 const Projects = styled.div`
+    margin: 50px;
+    box-shadow: 2px 2px 4px #000000;
+    border-radius: 50px;
+    background-color: #f9f9f9;
     padding-left: 20px;
     padding-right: 20px;
     display: grid;

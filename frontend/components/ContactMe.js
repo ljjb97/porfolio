@@ -13,17 +13,23 @@ const LinkStyle = styled.a`
     color: #000000;
 `;
 
+const ContactList = styled.div`
+    margin: 50px;
+    box-shadow: 2px 2px 4px #000000;
+    border-radius: 50px;
+    background-color: #f9f9f9;
+`;
+
 class ContactMe extends Component {
     render() {
         return (
-            <div id="Contact">
-                <TitleLine>Contact</TitleLine>
+            <ContactList>
                 <LinkStyle href="https://www.linkedin.com/in/liam-ballantyne/"><ImageSizer src="../static/LinkedIn.svg" />LinkedIn</LinkStyle>
                 <br/>
                 <LinkStyle href="https://github.com/ljjb97"><ImageSizer src="../static/GitHub-Mark.png"/>GitHub</LinkStyle>
                 <br/>
                 <LinkStyle>Email</LinkStyle>
-            </div>
+            </ContactList>
         );
     }
 }
