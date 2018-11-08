@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import styled from "styled-components";
 
 const ImageSizer = styled.img`
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
 `;
 
 const LinkStyle = styled.a`
@@ -17,7 +17,7 @@ const ContactList = styled.div`
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 20px;
-  box-shadow: 2px 2px 4px #000000;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 50px;
   background-color: #f9f9f9;
   @media (max-width: 700px) {
@@ -41,7 +41,8 @@ class ContactMe extends Component {
         </LinkStyle>
         <br />
         <LinkStyle href="mailto:ljjb97@gmail.com">
-          Email: ljjb97@gmail.com
+          <ImageSizer src="../static/emailicon.svg"/>
+          &nbsp; ljjb97@gmail.com
         </LinkStyle>
       </ContactList>
     );
