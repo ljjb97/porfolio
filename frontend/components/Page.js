@@ -21,6 +21,7 @@ const TitleContainer = styled.div`
 
 const BodyContainer = styled.div`
     grid-area: body;
+    background-color: #ffcccc;
 `;
 
 injectGlobal`

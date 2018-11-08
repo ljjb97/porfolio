@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const NavStyle = styled.div`
     height: 100px;
-    background-color: #89cff0;
+    background-image: linear-gradient(-90deg, #89cff0, #77c2e5);
     display:grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     padding-left: 2em;
