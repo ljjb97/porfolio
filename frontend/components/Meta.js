@@ -75,6 +75,7 @@ const Meta = () => (
       sizes="16x16"
       href="../static/favicon/favicon-16x16.png"
     />
+    <link rel="stylesheet" href="devicon.css" />
     <link rel="manifest" href="../static/favicon/manifest.json" />
     <meta name="msapplication-TileColor" content="#ffffff" />
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
