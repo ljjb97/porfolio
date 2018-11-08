@@ -1,27 +1,26 @@
-import React, { Component } from 'react';
-import styled, { ThemeProvider, injectGlobal } from 'styled-components';
-import TitleCanvas from './TitleCanvas';
-import About from './About';
-import Meta from './Meta';
+import React, { Component } from "react";
+import styled, { ThemeProvider, injectGlobal } from "styled-components";
+import TitleCanvas from "./TitleCanvas";
+import About from "./About";
+import Meta from "./Meta";
 
-const theme = {
-};
+const theme = {};
 
 const PageGrid = styled.div`
-    display:grid;
-    grid-template-areas:
-    'title'
-    'body';
+  display: grid;
+  grid-template-areas:
+    "title"
+    "body";
 `;
 
 const TitleContainer = styled.div`
-    grid-area: title;
-    width:100%;
+  grid-area: title;
+  width: 100%;
 `;
 
 const BodyContainer = styled.div`
-    grid-area: body;
-    background-color: #ffcccc;
+  grid-area: body;
+  background-color: #ffcccc;
 `;
 
 injectGlobal`
@@ -42,23 +41,23 @@ injectGlobal`
 `;
 
 class Page extends Component {
-    render() {
-        return (
-            <ThemeProvider theme={theme}>
-                <div>
-                    <Meta />
-                    <PageGrid>
-                        <TitleContainer>
-                            <TitleCanvas />
-                        </TitleContainer>
-                        <BodyContainer>
-                            <About />
-                        </BodyContainer>
-                    </PageGrid>
-                </div>
-            </ThemeProvider>
-        );
-    }
+  render() {
+    return (
+      <ThemeProvider theme={theme}>
+        <div>
+          <Meta />
+          <PageGrid>
+            <TitleContainer>
+              <TitleCanvas />
+            </TitleContainer>
+            <BodyContainer>
+              <About />
+            </BodyContainer>
+          </PageGrid>
+        </div>
+      </ThemeProvider>
+    );
+  }
 }
 
 export default Page;

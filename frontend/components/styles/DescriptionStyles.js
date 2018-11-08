@@ -1,7 +1,7 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 const Description = styled.div`
-    text-align: left;
+  text-align: left;
 `;
 
 export default Description;

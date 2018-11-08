@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const Button = styled.ul`
   margin: 0;
@@ -24,7 +24,7 @@ const Button = styled.ul`
       padding: 0 10px;
     }
     &:before {
-      content: '';
+      content: "";
       width: 2px;
       background: ${props => props.theme.black};
       height: 100%;
@@ -36,8 +36,8 @@ const Button = styled.ul`
     }
     &:after {
       height: 2px;
-      background: ${props => props.theme.black};;
-      content: '';
+      background: ${props => props.theme.black};
+      content: "";
       width: 0;
       position: absolute;
       transform: translateX(-50%);
