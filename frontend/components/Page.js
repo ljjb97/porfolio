@@ -29,14 +29,14 @@ injectGlobal`
         margin: 0;
         font-size: 1.5rem;
         line-height: 2;
-        font-family: 'radnika_next';
+        font-family: 'Roboto', sans-serif;
     }
     @font-face{
-        font-family: 'radnika_next';
-        src: url('/static/radnikanext-medium-webfont.woff2') 
-        format('woff2');
+        font-family: 'Roboto', sans-serif;
+        src: url('/static/Roboto-Thin.ttf') 
+        format('tff');
         font-weight: normal;
-        font-style: normal;
+        font-style: thin;
     }
 `;
 

@@ -27,11 +27,11 @@ class ContactMe extends Component {
     render() {
         return (
             <ContactList>
-                <LinkStyle href="https://www.linkedin.com/in/liam-ballantyne/"><ImageSizer src="../static/LinkedIn.svg" />linkedin.com/in/liam-ballantyne</LinkStyle>
+                <LinkStyle href="https://www.linkedin.com/in/liam-ballantyne/"><ImageSizer src="../static/LinkedIn.svg" />&nbsp; linkedin.com/in/liam-ballantyne</LinkStyle>
                 <br/>
-                <LinkStyle href="https://github.com/ljjb97"><ImageSizer src="../static/GitHub-Mark.png" />github.com/ljjb97</LinkStyle>
+                <LinkStyle href="https://github.com/ljjb97"><ImageSizer src="../static/GitHub-Mark.png" />&nbsp; github.com/ljjb97</LinkStyle>
                 <br/>
-                <LinkStyle>Email</LinkStyle>
+                <LinkStyle href="mailto:ljjb97@gmail.com">Email: ljjb97@gmail.com</LinkStyle>
             </ContactList>
         );
     }

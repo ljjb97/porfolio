@@ -12,14 +12,14 @@ const AbCanvas = styled.canvas`
 `;
 
 class About extends Component {
-    componentDidMount() {
+    /*componentDidMount() {
         const ABdes = document.getElementById("AboutCont");
         const test = window.getComputedStyle(ABdes).getPropertyValue('height').split("");
         test.splice(test.length - 2, 2);
         const IntMaker = parseInt(test.join(""));
         TriangleBacking(0, 0, 0, window.innerWidth, IntMaker, 50, 10, "#FFFFFF", "AboutBack");
         document.getElementById("AboutBack").style.top = (window.innerHeight + 100).toString() + "px"
-    }
+    } */
     render() {
         return (
             <div id="AboutCont">
