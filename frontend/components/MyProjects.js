@@ -2,7 +2,10 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 const Projects = styled.div`
-    margin: 10px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 10px;
+    margin-bottom: 10px;
     padding: 20px;
     box-shadow: 2px 2px 4px #000000;
     border-radius: 50px;

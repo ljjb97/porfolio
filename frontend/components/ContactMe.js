@@ -12,8 +12,11 @@ const LinkStyle = styled.a`
 `;
 
 const ContactList = styled.div`
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 10px;
+    margin-bottom: 10px;
     padding: 20px;
-    margin: 10px;
     box-shadow: 2px 2px 4px #000000;
     border-radius: 50px;
     background-color: #f9f9f9;

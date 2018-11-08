@@ -2,7 +2,10 @@ import React, { Component } from 'react';
 import styled from "styled-components"
 
 const Description = styled.div`
-    margin: 10px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 10px;
+    margin-bottom: 10px;
     box-shadow: 2px 2px 4px #000000;
     border-radius: 50px;
     background-color: #f9f9f9;
@@ -24,9 +27,11 @@ const Words = styled.div`
 `;
 
 const MyPicture = styled.img`
-    padding-top: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
     grid-area: Picture;
     border-radius: 50%;
+    border: 2px solid black;
     @media(max-width: 700px) {
         padding-left: 20px;
     }
