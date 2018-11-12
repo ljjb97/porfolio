@@ -8,7 +8,8 @@
     "build": "next build",
     "start": "next start -p $PORT",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "heroku-postbuild": "next build"
+    "heroku-postbuild": "next build",
+    "storybook": "start-storybook -p 9001 -c ./storybook"
   },
   "keywords": [],
   "author": "",
@@ -84,5 +85,9 @@
         ]
       }
     }
+  },
+  "devDependencies": {
+    "@storybook/react": "^4.0.4",
+    "babel-loader": "^8.0.4"
   }
 }
