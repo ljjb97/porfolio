@@ -36,7 +36,9 @@ class DevIcon extends Component {
           height="30px"
           src={this.props.src}
           ref="DevIcon"
-        />
+        >
+        {this.props.children}
+        </ImageSizer>
         <p ref="SkillName">
           <SkillTag>{this.props.children}</SkillTag>
         </p>

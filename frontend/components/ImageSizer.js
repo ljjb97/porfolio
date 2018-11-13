@@ -11,7 +11,7 @@ class ImageSizer extends Component {
     Image.style.width = this.props.width;
     Image.style.height = this.props.height;
     Image.src = this.props.src;
-    
+    Image.alt = this.props.children;
   }
 
   render() {
