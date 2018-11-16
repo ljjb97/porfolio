@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
+import ImageSizer from "./ImageSizer";
 
 const Projects = styled.div`
   margin-left: 20%;
@@ -26,8 +27,16 @@ const Project = styled.div`
   border: 5px solid #000000;
 `;
 
+const ProjectInfo = styled.div`
+  display: initial;
+  width: 100px;
+  height: 100px;
+  background-color: #000000;
+  z-index: 10;
+`;
+
 class MyProjects extends Component {
-  componentDidMount() {
+  componentDidMount() {/*
     const canvas = document.getElementById("projImg1");
     const Proj1 = document.getElementById("proj1");
     const ProjWidth = window
@@ -45,13 +54,22 @@ class MyProjects extends Component {
     });
     img.src = "../static/RelaxProjPic.PNG";
     Proj1.style.height = ProjWidthNum.toString() + "px";
+    const Elem = document.getElementById("projImg1");
+    const CompStyles = window.getComputedStyle(Elem);
+    this.refs.info.style.width = CompStyles.width;
+    this.refs.info.style.height = CompStyles.height;
+    this.refs.info.style.backgroundColor = "#000000"; */
   }
   render() {
     return (
       <div id="MyProjects">
         <Projects>
           <Project id="proj1">
-            <canvas id="projImg1" />
+            <div ref="info">
+              <ImageSizer src="../static/RelaxProjPic.PNG" width="300px" height="300px">
+              </ImageSizer>
+              <ProjectInfo />
+            </div>
           </Project>
           <Project>
             Project 2<br /> Coming Soon
